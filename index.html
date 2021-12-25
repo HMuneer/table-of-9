@@ -2,6 +2,15 @@
 <html>
 <head>
 <title></title>
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
 <style type="text/css">
 *{
 text-transform:capitalize;
@@ -46,7 +55,7 @@ span{
 	text-decoration:none;
 	display:inline-block;
 	padding: 20px 18px 20px 16px;
-	margin-top:3pc;
+	margin-top:1pc;
 }
 .next{
 color: white;
@@ -54,7 +63,7 @@ background-color:orange;
 text-decoration:none;
 display:inline-block;
 padding: 20px 28px 20px 29px;
-margin-top:3pc;
+margin-top:1pc;
 margin-left:12pc;
 }
 .navbar {
@@ -79,6 +88,51 @@ margin-left:12pc;
 	color:White;
 		background-color:black;
 	}
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition: 0.5s;
+}
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1;
+}
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
 </style>
 </head>
 <body>
@@ -86,12 +140,52 @@ margin-left:12pc;
 	<nav class="navbar">
 		<ul>
 			<li><a href="https://hmuneer.github.io/Home-table/">Home</li></a>
-			<li><a href="https://hmuneer.github.io/table.1.1/">Tables</li></a>
-			<li><a href="https://hmuneer.github.io/list-of-tables/">Table's List</a></li>
-			<li><a href="https://www.facebook.com/profile.php?id=100027925870102""">Contact us</li></a>
+			<li><a href="https://hmuneer.github.io/table.1.1/">Table</li></a>
+			<li><a href="https://hmuneer.github.io/list-of-tables/">Table List 1</a></li>
+			<li><a href="https://hmuneer.github.io/list-of-tables2/">Table List 2</a></li>
 		</ul>
 	</nav>
 </header>
+
+<div id="myNav" class="overlay">
+
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+  <a href="https://hmuneer.github.io/table.1.1/">Table Of 1</a>
+  <a href="https://hmuneer.github.io/table-2/">Table Of 2</a>
+  <a href="https://hmuneer.github.io/table-3/">Table Of 3</a>
+  <a href="https://hmuneer.github.io/table-4/">Table Of 4</a>
+  <a href="https://hmuneer.github.io/Table-5/">Table Of 5</a>
+  <a href="https://hmuneer.github.io/table-of-6/">Table Of 6</a>
+  <a href="https://hmuneer.github.io/table-of-7./">Table Of 7</a>
+  <a href="https://hmuneer.github.io/table-of-8/">Table Of 8</a>
+  <a href="https://hmuneer.github.io/table-of-9/">Table Of 9</a>
+  <a href="https://hmuneer.github.io/table-of-10/">Table Of 10</a>
+  <a href="https://hmuneer.github.io/Table-11/">Table Of 11</a>
+  <a href="https://hmuneer.github.io/table-12/">Table Of 12</a>
+  <a href="https://hmuneer.github.io/table-13/">Table Of 13</a>
+  <a href="https://hmuneer.github.io/table-14/">Table Of 14</a>
+  <a href="https://hmuneer.github.io/table-15/">Table Of 15</a>
+  <a href="https://hmuneer.github.io/table-16/">Table Of 16</a>
+  <a href="https://hmuneer.github.io/table-17/">Table Of 17</a>
+  <a href="https://hmuneer.github.io/table-18/">Table Of 18</a>
+  <a href="https://hmuneer.github.io/table-19/">Table Of 19</a>
+  <a href="https://hmuneer.github.io/table-20/">Table Of 20</a>
+
+  <a href="https://hmuneer.github.io/table-21/">Table Of 21</a>
+  <a href="https://hmuneer.github.io/table-22/">Table Of 22</a>
+  <a href="https://hmuneer.github.io/table-23/">Table Of 23</a>
+  <a href="https://hmuneer.github.io/table-24/">Table Of 24</a>
+  <a href="https://hmuneer.github.io/table-25/">Table Of 25</a>
+  <a href="https://hmuneer.github.io/table-26/">Table Of 26</a>
+  <a href="https://hmuneer.github.io/table-27/">Table Of 27</a>
+  <a href="https://hmuneer.github.io/table-28/">Table Of 28</a>
+  <a href="https://hmuneer.github.io/table-29/">Table Of 29</a>
+  <a href="https://hmuneer.github.io/table-30/">Table Of 30</a>
+</div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
 <div class="line">
 <h2>Table of <h2>
 <span>9</span>
